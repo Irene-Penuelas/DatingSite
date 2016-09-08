@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Finding Love</title>
+</head>
+<body>
+<h1>Please Enter Your Details For Our Dating Website!</h1>
+<!--#1-->
+<fieldset>
+    <legend>Your Face</legend>
+<!-- Your Avatar Shtuff-->
+    <label for="Your Image">Your Image:</label>
+        <input type="file" id="Your Image" required>
+
+    <br>
+
+    <label for="preview">Image preview:</label>
+        <img id="preview">
+</fieldset>
+
+<!--#2-->
+<fieldset>
+    <legend>Your general details</legend>
+        <label for="Name">Name:</label>
+            <input type="text" id="Name" required>
+
+    <br>
+
+        <label for="sex">Gender:</label>
+            <input type="radio" id="sex" name="Male" required>Male
+            <input type="radio" name="Female" required>Female
+
+    <br>
+
+        <label for="Age">Age</label>
+            <input type="number" id="Age" required>
+
+    <br>
+
+        <label for="DOB">Date of Birth:</label>
+            <input type="date" id="DOB">
+
+    <br>
+
+        <label for="favColor">Favorite Color:</label>
+            <input type="color" id="favColor">
+    <br>
+
+    <!--Drop Down-->
+
+        <label for="origin">Which Country:</label>
+            <select id="origin">
+                <option value="Canada">Canada</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Norway">Norway</option>
+                <option value="Scotland">Scotland</option>
+                <option value="Spain">Spain</option>
+                <option value="No Selection">No Selection</option>
+            </select>
+</fieldset>
+
+<!-- #3-->
+<fieldset>
+    <legend>Your Indicators</legend>
+    <!-- Sliding things-->
+        <label for="height">Height:</label>
+            Short<input type="range" id="height" min="0" max="100">Tall
+
+    <br>
+
+        <label for="money">Salary:</label>
+            Poor<input type="range" id="money" min="0" max="100">Rich
+</fieldset>
+
+<!--#4-->
+<fieldset>
+    <legend>Contact Information</legend>
+    <!-- Stalking necessities-->
+        <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+    <br>
+
+        <label for="digits">Mobile:</label>
+            <input type="tel" id="digits">
+    <br>
+
+    <!-- Text Area: Their LOCATION-->
+        <label for="location">Address:</label>
+            <textarea id="location">
+
+            </textarea>
+
+    <br>
+
+        <label for="contactInfo">Method to contact you:</label>
+        <input type="checkbox" id="contactInfo">Email
+        <input type="checkbox">Whatsapp
+        <input type="checkbox">In-app chat
+</fieldset>
+<!-- Paperwork Done!-->
+<input type="submit">
+
+
+</body>
+</html>
