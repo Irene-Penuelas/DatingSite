@@ -3,6 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Finding Love</title>
+    <link rel="stylesheet" type="text/css" href="DatingSiteStyle.css">
+    <link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css"
+
+          rel="stylesheet" type="text/css" />
+
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+    <script  type="text/javascript" src="DatingSiteJava.js"></script>
 </head>
 <body>
 <h1>Please Enter Your Details For Our Dating Website!</h1>
@@ -11,12 +20,12 @@
     <legend>Your Face</legend>
 <!-- Your Avatar Shtuff-->
     <label for="Your Image">Your Image:</label>
-        <input type="file" id="Your Image" required>
+        <input type="file" onchange="readURL(this);" id="Your Image" required>
 
     <br>
 
-    <label for="preview">Image preview:</label>
-        <img id="preview">
+    <label for="blah">Image preview:</label>
+        <img id="blah" src="#" alt="your image">
 </fieldset>
 
 <!--#2-->
@@ -28,8 +37,8 @@
     <br>
 
         <label for="sex">Gender:</label>
-            <input type="radio" id="sex" name="Male" required>Male
-            <input type="radio" name="Female" required>Female
+            <input type="radio" id="sex" name="Male" class="contactInfo" required>Male
+            <input type="radio" name="Female" class="contactInfo" required>Female
 
     <br>
 
@@ -65,12 +74,12 @@
     <legend>Your Indicators</legend>
     <!-- Sliding things-->
         <label for="height">Height:</label>
-            Short<input type="range" id="height" min="0" max="100">Tall
+         <h4 class="box#1">Short</h4>  <input type="range" id="height" min="0" max="100"><h4> Tall  </h4>
 
     <br>
 
         <label for="money">Salary:</label>
-            Poor<input type="range" id="money" min="0" max="100">Rich
+           <h4 class="box#1">Poor    </h4>&nbsp;<input type="range" id="money" min="0" max="100"><h4> Rich</h4>
 </fieldset>
 
 <!--#4-->
@@ -94,10 +103,10 @@
 
     <br>
 
-        <label for="contactInfo">Method to contact you:</label>
-        <input type="checkbox" id="contactInfo">Email
-        <input type="checkbox">Whatsapp
-        <input type="checkbox">In-app chat
+    <label for= "checkEmail" class="contactInfo">Method to contact you:</label>
+        <input type="checkbox" id=checkEmail class="contactInfo">Email
+        <input type="checkbox" id="checkWhatsapp" class="contactInfo">Whatsapp
+        <input type="checkbox" id="checkInApp" class="contactInfo">In-app chat
 </fieldset>
 <!-- Paperwork Done!-->
 <input type="submit">
